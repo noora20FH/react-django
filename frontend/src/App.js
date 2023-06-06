@@ -6,6 +6,8 @@ import Students from "./components/Students";
 import Manage from "./components/Manage";
 import {BrowserRouter, Route, Routes} from 'react-router-dom';
 
+import User from "./components/user/user"
+
 function App() {
   return (
     <BrowserRouter>
@@ -14,6 +16,7 @@ function App() {
          <Route exact path="/" element={<Home/>} />
          <Route path="/students" element={<Students/>} />
          <Route path="/manage" element={<Manage/>} />
+         <Route path='/User' element={<User/>} />
        </Routes>
     </BrowserRouter>
   );
