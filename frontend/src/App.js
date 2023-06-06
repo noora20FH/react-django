@@ -11,16 +11,17 @@ import Register from "./components/Register";
 import Dashboard from "./components/Dashboard";
 import Navbar from "./components/Navbar";
 
+
 function App() {
   return (
     <BrowserRouter>
       <Navigation />
       <Routes>
-         <Route exact path="/" element={<Home/>} />
+         <Route exact path="/" element={<Login/>} />
          <Route path="/students" element={<Students/>} />
          <Route path="/manage" element={<Manage/>} />
          
-         <Route path='/Login' element={<Login/>} />
+         <Route path='/InputData' element={<Home/>} />
          <Route path='/Register' element={<Register/>} />
         <Route path='/Dashboard' element={[<Navbar/>, <Dashboard/>]}/>
        </Routes>

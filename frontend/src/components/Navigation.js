@@ -9,7 +9,7 @@ import {
 import {NavLink} from 'react-router-dom';
 import {Navbar} from 'react-bootstrap';
 import logo from '../static/logo.png';
-import "../App.css";
+// import "../App.css";
 
 
 const Navigation = () => {
@@ -34,7 +34,7 @@ const Navigation = () => {
         </CDBSidebarHeader>
         <CDBSidebarContent>
           <CDBSidebarMenu>
-            <NavLink exact to="/" activeClassName="activeClicked">
+            <NavLink exact to="/InputData" activeClassName="activeClicked">
               <CDBSidebarMenuItem icon="home">Home</CDBSidebarMenuItem>
             </NavLink>
             <NavLink exact to="/students" activeClassName="activeClicked">
